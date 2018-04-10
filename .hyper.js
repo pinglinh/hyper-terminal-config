@@ -4,6 +4,11 @@
 
 module.exports = {
   config: {
+    hyperTabs: {
+      trafficButtons: true,
+      tabIconsColored: true,
+      activityColor: "salmon"
+    },
     // Choose either "stable" for receiving highly polished,
     // or "canary" for less polished but more frequent updates
     updateChannel: "stable",
@@ -116,7 +121,15 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hypercwd", "hyperterm-tabs", "hyper-statusline"],
+  plugins: [
+    "hypercwd",
+    "hyperterm-tabs",
+    "hyper-statusline",
+    "hyper-tab-icons",
+    "hyper-tabs-enhanced",
+    "hyper-chesterish"
+    // "hyperterm-atom-dark"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
